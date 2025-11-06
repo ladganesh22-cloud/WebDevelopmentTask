@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+nav {
+  padding: 15px 0;
+}
+
+nav .logo {
+  float: left;
+  margin-left: 25px;
+  color: #2D3658;
+}
+
+nav .menu-icon {
+  width: 80%;
+  float: left;
+  margin-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #63737B;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav .username-icon {
+  float: right;
+  padding: 20px;
+  background-color: #E9F7FF;
+  color: #02ABFF;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+.hero-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.hero-content {
+  float: left;
+  width: 35%;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  color: #4b5b67;
+  width: 70%;
+}
+
+.hero-content h2 {
+  font-size: 45px;
+  color: #06A8FF;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #A1ADB7;
+  width: 70%;
+  font-size: 18px;
+}
+
+.hero-image {
+  float: right;
+  width: 30%;
+}
+
+.hero-image img {
+  width: 500px;
+  height: 350px;
+}
+
+.hero-content .btn {
+  padding: 15px 30px;
+  background-color: #05A8FF;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 15px;
+  border-color: transparent;
+}
