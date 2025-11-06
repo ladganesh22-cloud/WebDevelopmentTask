@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-  padding: 15px 0;
+  margin: 15px 0;
 }
 
 nav .logo {
@@ -58,12 +58,10 @@ nav .username-icon {
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: center;
   margin-top: 5em;
 }
 
 .hero-content {
-  float: left;
   width: 35%;
 }
 
@@ -79,7 +77,6 @@ nav .username-icon {
 }
 
 .hero-content p {
-  font-size: 20px;
   margin-bottom: 30px;
   color: #A1ADB7;
   width: 70%;
@@ -87,7 +84,6 @@ nav .username-icon {
 }
 
 .hero-image {
-  float: right;
   width: 30%;
 }
 
@@ -104,4 +100,84 @@ nav .username-icon {
   font-weight: bold;
   border-radius: 15px;
   border-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  nav .menu-icon {
+    width: 100%;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+
+  }
+
+  .hero-content {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  nav .menu-icon {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+
+  }
+
+  nav .username-icon {
+    margin: 10px 20px;
+    float: left;
+  }
+
+  .hero-content {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    width: 90%;
+  }
 }
