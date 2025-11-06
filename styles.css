@@ -115,7 +115,10 @@ nav .username-icon {
     flex-direction: column;
     width: 80%;
     margin: auto;
+  }
 
+  nav ul {
+    gap: 20px;
   }
 
   .hero-content {
@@ -147,7 +150,10 @@ nav .username-icon {
     flex-direction: column;
     width: 80%;
     margin: auto;
+  }
 
+  nav ul {
+    gap: 20px;
   }
 
   nav .username-icon {
