@@ -29,6 +29,9 @@ const greetButton = document.getElementById("greet-button");
 greetButton.addEventListener("click", () => {
   const inputText = document.getElementById("input-1");
   const inputTextValue = inputText.value;
-  displayText.append(", " + inputTextValue);
+  displayText.innerText = "";
+  if (inputTextValue !== "") {
+    displayText.append(", " + inputTextValue);
+  }
 });
 // end text entered
