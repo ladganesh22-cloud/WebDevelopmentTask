@@ -13,17 +13,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
-  <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init({
-        publicKey: "mHv-9eOATGa6YRwQc",
-      });
-    })();
-  </script>
 </head>
 
 <body>
@@ -50,24 +39,20 @@
     </nav>
   </header>
   <section class="hero-section">
-    <div class="row hero-section-container">
-      <!-- <div class="col span_1_of_5"></div> -->
-      <div class="col span_1_of_2 hero-content">
-        <h1>Revitalize Your</h1>
-        <h1>Clothes with Expert</h1>
-        <h2>Laundry Services!</h2>
-        <p>From premium dry cleaning to swift wash and fold, we deliver care and
-          convenience. Schedule a pickup and rediscover the freshness of your
-          clothes today!
-        </p>
-        <a href="#our-services" class="btn"><ion-icon class="icon-big"
-            name="folder-open-outline"></ion-icon>Book a service today!</a>
-      </div>
-      <div class="col span_1_of_2 hero-image">
-        <img src="laundry-services-project/resources/image/laundary-img-1.jpg"
-          alt="Laundry Services">
-      </div>
-      <!-- <div class="col span_1_of_5"></div> -->
+    <div class="hero-content">
+      <h1>Revitalize Your</h1>
+      <h1>Clothes with Expert</h1>
+      <h2>Laundry Services!</h2>
+      <p>From premium dry cleaning to swift wash and fold, we deliver care and
+        convenience. Schedule a pickup and rediscover the freshness of your
+        clothes today!
+      </p>
+      <a href="#our-services" class="btn"><ion-icon class="icon-big"
+          name="folder-open-outline"></ion-icon>Book a service today!</a>
+    </div>
+    <div class="hero-image">
+      <img src="laundry-services-project/resources/image/laundary-img-1.jpg"
+        alt="Laundry Services">
     </div>
   </section>
   <section class="our-achievement-section" id="our-achievements">
@@ -96,98 +81,87 @@
         <p class="click-add-info">Click On The Add To Cart Button To Add The
           Service To Your Cart</p>
         <div class="service-item">
-          <table class="service-cart-items-table" id="serviceCartItemsTable">
+          <table>
             <tr>
-              <td><ion-icon class="service-icon"
-                  name="flash-off-outline"></ion-icon></td>
-              <td class="service-name">Dry Cleaning</td>
+              <td class="service-name"><ion-icon class="service-icon"
+                  name="flash-off-outline"></ion-icon>Dry Cleaning
+              </td>
               <td class="service-price">$200.00</td>
               <td>
                 <div class="add-remove-btn-icon"><button class="add-to-cart-btn"
-                    id="addCartbtn1">Add to
-                    Cart<ion-icon class="btn-icon add-btn-icon"
-                      name="add-circle-outline"></ion-icon></button><button
-                    class="remove-to-cart-btn" id="removeCartbtn1">Remove
-                    Item<ion-icon class="btn-icon remove-btn-icon"
-                      name="remove-circle-outline"></ion-icon></button></div>
+                    id="addCartbtn">Add to
+                    Cart</button><ion-icon class="btn-icon add-btn-icon"
+                    name="add-circle-outline"></ion-icon><ion-icon
+                    class="btn-icon remove-btn-icon"
+                    name="remove-circle-outline"></ion-icon></div>
               </td>
             </tr>
             <tr>
-              <td><ion-icon class="service-icon"
-                  name="funnel-outline"></ion-icon></td>
-              <td class="service-name">Wash & Fold</td>
+              <td class="service-name"><ion-icon class="service-icon"
+                  name="funnel-outline"></ion-icon>Wash & Fold</td>
               <td class="service-price">$100.00</td>
               <td>
                 <div class="add-remove-btn-icon"><button class="add-to-cart-btn"
-                    id="addCartbtn2">Add to
-                    Cart<ion-icon class="btn-icon add-btn-icon"
-                      name="add-circle-outline"></ion-icon></button><button
-                    class="remove-to-cart-btn" id="removeCartbtn2">Remove
-                    Item<ion-icon class="btn-icon remove-btn-icon"
-                      name="remove-circle-outline"></ion-icon></button></div>
+                    id="addCartbtn">Add to
+                    Cart</button><ion-icon class="btn-icon add-btn-icon"
+                    name="add-circle-outline"></ion-icon><ion-icon
+                    class="btn-icon remove-btn-icon"
+                    name="remove-circle-outline"></ion-icon></div>
               </td>
             </tr>
             <tr>
-              <td><ion-icon class="service-icon"
-                  name="color-wand-outline"></ion-icon></td>
-              <td class="service-name">Ironing</td>
+              <td class="service-name"><ion-icon class="service-icon"
+                  name="color-wand-outline"></ion-icon>Ironing</td>
               <td class="service-price">$30.00</td>
               <td>
                 <div class="add-remove-btn-icon"><button class="add-to-cart-btn"
-                    id="addCartbtn3">Add to
-                    Cart<ion-icon class="btn-icon add-btn-icon"
-                      name="add-circle-outline"></ion-icon></button><button
-                    class="remove-to-cart-btn" id="removeCartbtn3">Remove
-                    Item<ion-icon class="btn-icon remove-btn-icon"
-                      name="remove-circle-outline"></ion-icon></button></div>
+                    id="addCartbtn">Add to
+                    Cart</button><ion-icon class="btn-icon add-btn-icon"
+                    name="add-circle-outline"></ion-icon><ion-icon
+                    class="btn-icon remove-btn-icon"
+                    name="remove-circle-outline"></ion-icon></div>
               </td>
             </tr>
             <tr>
-              <td><ion-icon class="service-icon"
-                  name="footsteps-outline"></ion-icon></td>
-              <td class="service-name">Stain Removal
+              <td class="service-name"><ion-icon class="service-icon"
+                  name="footsteps-outline"></ion-icon>Stain Removal
               </td>
               <td class="service-price">$500.00</td>
               <td>
                 <div class="add-remove-btn-icon"><button class="add-to-cart-btn"
-                    id="addCartbtn4">Add to
-                    Cart<ion-icon class="btn-icon add-btn-icon"
-                      name="add-circle-outline"></ion-icon></button><button
-                    class="remove-to-cart-btn" id="removeCartbtn4">Remove
-                    Item<ion-icon class="btn-icon remove-btn-icon"
-                      name="remove-circle-outline"></ion-icon></button></div>
+                    id="addCartbtn">Add to
+                    Cart</button><ion-icon class="btn-icon add-btn-icon"
+                    name="add-circle-outline"></ion-icon><ion-icon
+                    class="btn-icon remove-btn-icon"
+                    name="remove-circle-outline"></ion-icon></div>
               </td>
             </tr>
             <tr>
-              <td><ion-icon class="service-icon" name="body-outline"></ion-icon>
-              </td>
-              <td class="service-name">Leather & Suede
+              <td class="service-name"><ion-icon class="service-icon"
+                  name="body-outline"></ion-icon>Leather & Suede
                 Cleaning</td>
               <td class="service-price">$999.00</td>
-              <td>
+              <td class="service-name">
                 <div class="add-remove-btn-icon"><button class="add-to-cart-btn"
-                    id="addCartbtn5">Add to
-                    Cart<ion-icon class="btn-icon add-btn-icon"
-                      name="add-circle-outline"></ion-icon></button><button
-                    class="remove-to-cart-btn" id="removeCartbtn5">Remove
-                    Item<ion-icon class="btn-icon remove-btn-icon"
-                      name="remove-circle-outline"></ion-icon></button></div>
+                    id="addCartbtn">Add to
+                    Cart</button><ion-icon class="btn-icon add-btn-icon"
+                    name="add-circle-outline"></ion-icon><ion-icon
+                    class="btn-icon remove-btn-icon"
+                    name="remove-circle-outline"></ion-icon></div>
               </td>
             </tr>
             <tr>
-              <td><ion-icon class="service-icon"
-                  name="shirt-outline"></ion-icon></td>
-              <td class="service-name">Wedding Dress
+              <td class="service-name"><ion-icon class="service-icon"
+                  name="shirt-outline"></ion-icon>Wedding Dress
                 Cleaning</td>
               <td class="service-price">$2800.00</td>
               <td>
                 <div class="add-remove-btn-icon"><button class="add-to-cart-btn"
-                    id="addCartbtn6">Add to
-                    Cart<ion-icon class="btn-icon add-btn-icon"
-                      name="add-circle-outline"></ion-icon></button><button
-                    class="remove-to-cart-btn" id="removeCartbtn6">Remove
-                    Item<ion-icon class="btn-icon remove-btn-icon"
-                      name="remove-circle-outline"></ion-icon></button></div>
+                    id="addCartbtn">Add to
+                    Cart</button><ion-icon class="btn-icon add-btn-icon"
+                    name="add-circle-outline"></ion-icon><ion-icon
+                    class="btn-icon remove-btn-icon"
+                    name="remove-circle-outline"></ion-icon></div>
               </td>
             </tr>
           </table>
@@ -201,7 +175,7 @@
       <div class="col span_1_of_3">
         <div class="add-items">
           <h3>Add Items</h3>
-          <table class="add-cart-items-table" id="addCartItemsTable">
+          <table>
             <thead>
               <tr>
                 <th style="width:20%">Sr. No</th>
@@ -210,67 +184,69 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="noitemsrow">
-                <td class="noitemsrowtd" colspan="3">
-                  <div class="noitemsadded-section">
-                    <div class="noitemsadded-container">
-                      <div class="noitemsadded-icon">
-                        <ion-icon class="btn-icon"
-                          name="information-circle-outline"></ion-icon>
-                      </div>
-                      <div>
-                        <h3>No Items Added</h3>
-                        <p>Add items to the cart from service bar</p>
-                      </div>
-                    </div>
-                  </div>
-                </td>
+              <tr>
+                <td id="bookSrNo"></td>
+                <td id="bookServiceName"></td>
+                <td id="bookprice"></td>
+              </tr>
+              <tr>
+                <td id="bookSrNo"></td>
+                <td id="bookServiceName"></td>
+                <td id="bookprice"></td>
+              </tr>
+              <tr>
+                <td id="bookSrNo"></td>
+                <td id="bookServiceName"></td>
+                <td id="bookprice"></td>
+              </tr>
+              <tr>
+                <td id="bookSrNo"></td>
+                <td id="bookServiceName"></td>
+                <td id="bookprice"></td>
+              </tr>
+              <tr>
+                <td id="bookSrNo"></td>
+                <td id="bookServiceName"></td>
+                <td id="bookprice"></td>
+              </tr>
+              <tr>
+                <td id="bookSrNo"></td>
+                <td id="bookServiceName"></td>
+                <td id="bookprice"></td>
               </tr>
             </tbody>
             <tfoot>
               <tr>
                 <td colspan="2">Total Amount</td>
-                <td id="addItemTotalAmount">$ 0.00</td>
+                <td id="addItemTotalAmount"></td>
               </tr>
             </tfoot>
           </table>
         </div>
         <div class="book-service-form">
-          <h4>Book Now</h4>
+          <h3>Book Now</h3>
           <form action="#" method="post">
             <div class="book-full-name">
               <label for="fullname">Full Name</label>
-              <input type="text" class="bookfullnameservice" id="bookFullName"
-                name="fullname" placeholder="Full Name" required>
+              <input type="text" name="fullname" placeholder="Full Name"
+                required>
             </div>
             <div class="book-address">
               <div class="booknowemail">
                 <label for="bookemail">Email</label>
-                <input type="email" class="bookemailservice" id="bookemail"
-                  name="bookemail" placeholder="Email" required>
+                <input type="email" name="bookemail" placeholder="Email"
+                  required>
               </div>
               <div class="bookphoneNumber">
                 <label for="phoneNumber">Phone Number</label>
-                <input type="number" class="bookphonenumberservice"
-                  id="bookphoneNum" name="phoneNumber"
+                <input type="number" name="phoneNumber"
                   placeholder="Phone Number" required>
               </div>
             </div>
             <div class="book-submit-btn">
-              <input type="button" value="Book Now" class="btn diabledbookbtn"
-                id="bookNowButton">
+              <input type="button" value="Book Now" class="btn">
             </div>
           </form>
-          <div class="addCartError">
-            <p><ion-icon class="btn-icon"
-                name="information-circle-outline"></ion-icon>Add
-              the items to the cart to book</p>
-          </div>
-          <div class="addCartSuccess">
-            <p><ion-icon class="btn-icon"
-                name="information-circle-outline"></ion-icon>Email has been sent
-              successfully</p>
-          </div>
         </div>
       </div>
     </div>
@@ -361,39 +337,10 @@
       <!-- </div> -->
     </div>
   </footer>
-  <script src="laundry-services-project/resources/js/script.js"></script>
-
   <script type="module"
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-  </script>
-
 </body>
 
 </html>

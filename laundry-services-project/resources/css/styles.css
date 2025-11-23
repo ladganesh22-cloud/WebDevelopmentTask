@@ -1,0 +1,703 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+.row {
+  width: 75%;
+  margin: auto;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  margin: 15px 0;
+}
+
+nav .logo {
+  float: left;
+  margin-left: 25px;
+  width: 20%;
+  text-align: center;
+}
+
+nav .logo img {
+  width: 90px;
+  height: auto;
+  object-fit: cover;
+}
+
+nav .menu-icon {
+  width: 80%;
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #63737B;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 0px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.4s ease-in;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  border-bottom: 2px solid #63737B;
+}
+
+nav .username-icon {
+  float: right;
+  padding: 20px;
+  background-color: #E9F7FF;
+  color: #02ABFF;
+  font-size: 14px;
+  border-radius: 15px;
+  width: 20%;
+  text-align: center;
+}
+
+.hero-section {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.hero-section-container {
+  width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  color: #4b5b67;
+  width: 100%;
+}
+
+.hero-content h2 {
+  font-size: 45px;
+  color: #06A8FF;
+}
+
+.hero-content p {
+  margin-bottom: 30px;
+  color: #A1ADB7;
+  width: 70%;
+  font-size: 18px;
+  margin-top: 28px;
+  line-height: 1.5;
+}
+
+/* .hero-image {
+  width: 30%;
+} */
+
+.hero-image img {
+  width: 500px;
+  height: 350px;
+  border-radius: 25px;
+}
+
+.hero-content a:link,
+.hero-content a:visited {
+  padding: 15px 35px;
+  background-color: #05A8FF;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 15px;
+  border-color: transparent;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  vertical-align: middle;
+}
+
+.hero-content .icon-big {
+  font-size: 22px;
+  vertical-align: middle;
+  margin-right: 8px;
+  color: #fff
+}
+
+/* Start Our Achievement Section  */
+.our-achievement-section {
+  margin: 10em 0 5em 0;
+}
+
+.our-achievement-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3ea9fa;
+  padding: 10px 50px;
+  height: 200px;
+}
+
+.our-achievement-container .span_3_of_6 {
+  font-size: 2rem;
+}
+
+.achievement-box {
+  text-align: left;
+  font-weight: 600;
+}
+
+/* End Our Achievement Section  */
+
+/* Start Our Services Setion  */
+
+.our-service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  padding: 5rem;
+}
+
+.service-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box .click-add-info {
+  margin: 10px 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+  color: #949191;
+}
+
+.service-item table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  height: 400px;
+}
+
+.add-remove-btn-icon {
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.add-to-cart-btn {
+  background-color: #eee;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.add-to-cart-btn,
+.remove-to-cart-btn {
+  font-size: 14px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.btn-icon {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.service-price {
+  font-weight: bold;
+  color: #5662F9;
+}
+
+.service-icon {
+  font-size: 20px;
+  color: #5662F9;
+  margin-right: 10px;
+}
+
+.add-items h3 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.add-items table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 280px;
+  margin-top: 5px;
+}
+
+.add-items table thead {
+  background-color: #eee;
+  height: 15%;
+}
+
+.add-items table tfoot {
+  height: 15%;
+}
+
+.add-items table tfoot tr td {
+  padding: 10px;
+}
+
+.add-items table tbody tr {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.noitemsadded-icon .btn-icon {
+  font-size: 3rem;
+}
+
+.add-items table tbody tr td,
+#addItemTotalAmount {
+  text-align: center;
+}
+
+.info-note {
+  margin: 20px 0px 0px 0px;
+  border-top: 2px solid #eee;
+  padding-top: 15px;
+  color: #5662F9;
+}
+
+
+.book-full-name {
+  margin: 10px 0px;
+}
+
+.book-address {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booknowemail {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.bookphoneNumber {
+  width: 70%;
+}
+
+.book-full-name input,
+.book-address input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.book-submit-btn {
+  text-align: center;
+  margin: 10px 0px
+}
+
+.remove-btn-icon,
+.remove-to-cart-btn {
+  display: none;
+}
+
+.remove-to-cart-btn {
+  background-color: #eee;
+  color: #e90808;
+  border: 1px solid #ca2b2b;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.book-submit-btn .btn {
+  padding: 1rem 1rem;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.book-submit-btn .enabledbookbtn {
+  background-color: #5662F9;
+  cursor: pointer;
+  border: 1px solid #5662F9;
+}
+
+.book-submit-btn .diabledbookbtn {
+  background-color: #9fa5f5;
+  cursor: not-allowed;
+  border: 1px solid #9fa5f5;
+}
+
+.book-service-form {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.book-service-form,
+.add-items {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addCartError,
+.addCartSuccess {
+  display: none;
+}
+
+.addCartError {
+  color: rgb(224, 13, 13)
+}
+
+.addCartSuccess {
+  color: rgb(15, 223, 32)
+}
+
+/* End Our Services Sextion  */
+
+
+/** Start Quality Section  **/
+
+.quality-section {
+  margin: 5rem 0;
+}
+
+.quality-box {
+  text-align: center;
+  padding: 2rem;
+  margin: 0 1rem;
+}
+
+.quality-box p {
+  margin-top: 1rem;
+  color: #C5C6C8;
+  line-height: 1.5;
+}
+
+.quality-box .quality-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* End Quality Section  **/
+
+/** Start Footer Section  **/
+footer {
+  color: #63737B;
+  clear: both;
+  padding-top: 2rem;
+}
+
+.footer-logo {
+  margin: 0;
+}
+
+.footer-logo p {
+  width: 90%;
+}
+
+.subscription-container {
+  background-color: #3ea9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.subscription-container input[type="text"],
+.subscription-container input[type="email"] {
+  padding: 20px 20px;
+  background-color: #4BB5F9;
+  border: 1px solid #fff;
+  font-size: 15px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.subscription-container input[type="text"] {
+  width: 35%;
+}
+
+.subscription-container input[type="email"] {
+  width: 48%;
+}
+
+.subscription-container .btn {
+  width: 35%;
+  padding: 15px 10px;
+  margin: 15px 0px;
+  font-size: 22px;
+  color: #67bbef;
+  font-weight: 600;
+  text-align: center;
+  background-color: #fff;
+  border: navajowhite;
+}
+
+.subscription-container h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-right: 1rem;
+  width: 90%;
+}
+
+.footer-menu {
+  display: flex;
+  background-color: #eee;
+  padding: 4rem 2rem;
+}
+
+.footer-menu .footer-logo img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer-menu .footer-links ul {
+  list-style: none;
+}
+
+.footer-menu .footer-links ul li {
+  line-height: 1.5;
+}
+
+.footer-menu .footer-links ul li a:link,
+.footer-menu .footer-links ul li a:visited {
+  color: #63737B;
+  text-decoration: none;
+}
+
+.footer-menu .footer-social-medias ul {
+  list-style: none;
+}
+
+.footer-menu .footer-social-medias ul li {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.footer-menu h3 {
+  margin-bottom: 10px;
+}
+
+/* End Footer Section  **/
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  nav .menu-icon {
+    width: 100%;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .hero-content {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    margin-bottom: 20px;
+    width: 85%;
+    margin-top: 10px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .our-achievement-container .span_3_of_6 {
+    font-size: 1.5rem;
+  }
+
+  .our-service-container {
+    padding: 3rem;
+  }
+
+  .subscription-container h1 {
+    font-size: 2rem;
+  }
+
+  .subscription-container {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .header-menu {
+    flex-direction: column;
+  }
+
+  nav .logo {
+    width: 90%;
+  }
+
+  nav .logo img {
+    width: 150px;
+  }
+
+  .hero-image img {
+    width: 350px;
+    height: auto;
+    margin-top: 3em;
+  }
+
+  nav .menu-icon {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  nav .username-icon {
+    margin: 10px 20px;
+    float: left;
+    width: 30%;
+  }
+
+  .hero-content {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    width: 90%;
+  }
+
+  .our-service-container {
+    padding: 2rem;
+  }
+
+  .our-achievement-container,
+  .our-service-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .our-achievement-container .span_3_of_6 {
+    font-size: 1.5rem;
+  }
+
+  .subscription-container h1 {
+    font-size: 2rem;
+  }
+
+  .subscription-container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .footer-menu .col {
+    margin-bottom: 2rem;
+  }
+
+  .service-box {
+    padding: 10px;
+  }
+
+  .add-remove-btn-icon {
+    padding: 0;
+  }
+
+  .achievement-box {
+    text-align: center;
+  }
+
+  .footer-logo p {
+    width: 100%;
+  }
+
+  .subscription-container .btn {
+    font-size: 15px;
+  }
+
+  .subscription-container input[type="text"],
+  .subscription-container input[type="email"],
+  .subscription-container .btn {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+}
